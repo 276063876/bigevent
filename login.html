@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大事件-登录/注册</title>
+     <!-- 引入 layui 插件 -->
+     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+     <!-- 字体图标 -->
+     <link rel="stylesheet" href="./assets/lib/font_3572392_ssznrj8jgd/iconfont.css">
+     <!-- 引入自己的 css -->
+     <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 <body>
-    
+    <!-- logo 区域 -->
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+    <!-- 登录注册区域 -->
+    <div class="logoin">
+        <!-- 后台管理系统标题 -->
+        <div class="title"></div>
+        
+        <!-- 登录区域 -->
+        <div class="logo-box">
+            <!-- 表单 -->
+            <form id="form-logoin">
+                <!-- 输入框 -->
+                <i class="iconfont icon-yonghu"></i>
+                
+                <input type="text" name="username" placeholder="请输入用户名" id="logoin-user">
+                <i class="iconfont icon-mima"></i>
+                <input type="password" name="password" placeholder="请输入密码" id="logoin-pswd">
+                <!-- 登录按钮 -->
+                <button id="logoin">登录</button>
+            </form>
+            <a href="javascript:;" id="logo">去注册账号</a>
+        </div>
+        
+        <!-- 注册区域 -->
+        <div class="reg-box">
+              <!-- 表单 -->
+              <form id="form-reg">
+                
+                <!-- 输入框 -->
+                <i class="iconfont icon-yonghu"></i>
+                <input type="text" name="username" placeholder="请输入用户名" id="reg-user">
+                <i class="iconfont icon-mima pswd1" ></i>
+                <input type="password" name="password" placeholder="请输入密码" id="reg-pswd">
+                <i class="iconfont icon-mima pswd2" ></i>
+                <input type="password" name="repassword" placeholder="再次确认密码">
+                <!-- 注册按钮 -->
+                <button id="">注册</button>
+                
+            </form>
+            <a href="javascript:;" id="reg">去登录</a>
+           
+        </div>
+
+    </div>
+    <!-- 导入 layui 的 js 文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
+    <!-- 导入 jquery  -->
+    <script src="./assets/lib/jquery.js"></script>
+    <!-- 导入拼接请求接口的根路径 js 文件 -->
+    <script src="./assets/js/baseAPI.js"></script>
+    <!-- 导入自己的 js -->
+    <script src="./assets/js/logoin.js"></script>
 </body>
 </html>

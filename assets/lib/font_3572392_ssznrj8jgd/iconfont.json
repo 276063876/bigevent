@@ -1,0 +1,23 @@
+{
+  "id": "3572392",
+  "name": "大事件",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "144706",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1304896",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}
