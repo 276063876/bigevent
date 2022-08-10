@@ -63,12 +63,11 @@
                         // return console.log(res.message)
                         return layer.msg(res.message)
                     }
-                    console.log(res.token)
-                    
-                    // console.log('注册成功!')
+                    // 将登录成功得到的 token 字符串，保存到 localStorage 中
+                    localStorage.setItem('token', res.token)
                     layer.msg('登录成功!')
                     // 模拟鼠标点击
-                    location.href = '/index.html'
+                    location.href = './index.html'
     
                 }
             )
